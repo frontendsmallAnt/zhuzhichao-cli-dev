@@ -1,3 +1,6 @@
 #! /usr/bin/env node
 
-console.log('hello imooc-cli')
+console.log('123')
+const utils = require('@zhuzhichao-cli-dev/utils')
+
+utils()

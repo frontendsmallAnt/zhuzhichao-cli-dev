@@ -5,7 +5,7 @@
   "author": "zhuzhichao <1041832785@qq.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/utils.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -17,7 +17,6 @@
     "test": "node ./__tests__/utils.test.js"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
   },
   "gitHead": "0e9d4c49d9c96a5c86e0cb9c87276d32647e22f9",
   "publishConfig": {
