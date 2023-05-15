@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/*"],
+  "packages": ["core/*","utils/*","commands/*","models/*"],
   "npmClient": "npm",
   "version": "1.0.5"
 }

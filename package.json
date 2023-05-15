@@ -12,7 +12,7 @@
   "dependencies": {
     "lerna": "^6.6.1"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "devDependencies": {
+    "@zhuzhichao-cli-dev/core": "^1.0.5"
+  }
 }
