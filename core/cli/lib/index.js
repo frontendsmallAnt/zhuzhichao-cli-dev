@@ -109,8 +109,8 @@ function registerCommand() {
     .option('-f,--force', '是否强制初始化项目')
     .action(exec)
 
-  program.on('option:debug', function (parameter) {
-    if (parameter) {
+  program.on('option:debug', function () {
+    if (program._optionValues.debug) {
       process.env.LOG_LEVEL = 'verbose'
     } else {
       process.env.LOG_LEVEL = 'info'
@@ -124,7 +124,6 @@ function registerCommand() {
 
   program.on('command:*', function (obj) {
     const availableCommands = program.commands.map(cmd => cmd.name())
-    console.log(colors.red('不存在命令' + obj[0]))
   })
 
   if (process.argv.length < 3) {

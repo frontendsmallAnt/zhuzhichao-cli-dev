@@ -1,7 +1,17 @@
 'use strict';
 
-module.exports = init;
+const Command = require('@zhuzhichao-cli-dev/command')
+class InitCommand extends Command {
+  constructor(){
+    
+  }
+
+}
 
 function init(projectName,cmdObj) {
-  console.log(projectName,cmdObj,process.env.CLI_TARGET_PATH)
+  return new InitCommand()
 }
+
+module.exports.InitCommand = InitCommand;
+
+module.exports = init

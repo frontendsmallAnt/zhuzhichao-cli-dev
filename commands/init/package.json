@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev/issues"
+  },
+  "dependencies": {
+    "@zhuzhichao-cli-dev/command": "file:../../models/command"
   }
 }
