@@ -1,10 +1,11 @@
 'use strict';
+
 const { isObject } = require('@zhuzhichao-cli-dev/utils')
+const path = require('path')
 const pkgDir = require('pkg-dir').sync
 const npminstall = require('npminstall')
 const pathExists = require('path-exists').sync
 const fse = require('fs-extra')
-const path = require('path')
 const { getDefaultRegistry, getNpmLatestVersion } = require('get-npm-info')
 const formatPath = require('@zhuzhichao-cli-dev/format-path')
 class Package {
@@ -27,7 +28,7 @@ class Package {
     }else{
       this.packageSplit = this.packageName
     }
-    this.cacheFilePathPrefix = this.packageName.replace('/', '-')
+    this.cacheFilePathPrefix = this.packageName.replace('/', '_')
   }
 
   async prepare() {
@@ -40,17 +41,18 @@ class Package {
   }
 
   get cacheFilePath() {
-    return path.resolve(this.storeDir, `_${this.cacheFilePathPrefix}@${this.packageVersion}@${this.packageSplit}`)
+    return path.resolve(this.storeDir, `_${this.cacheFilePathPrefix}@${this.packageVersion}@${this.packageName}`)
+  }
+
+  getSpecificFilePath(packageVersion) {
+    return path.resolve(this.storeDir, `_${this.cacheFilePathPrefix}@${packageVersion}@${this.packageName}`)
   }
 
   //判断pkg是否存在
   async exists() {
     //判断文件处于缓存还是
-    
-    console.log(pathExists('/Users/zhuzhichao/.zhuzhihcao-cli-dev/dependencies/node_modules/_@imooc-cli-init@1.0.1@@imooc-cli'), 'eeeee')
     if (this.storeDir) {
       await this.prepare()
-      console.log('storeDir',this.storeDir,this.cacheFilePath)
       return pathExists(this.cacheFilePath)
     } else {
       return pathExists(this.targetPath)
@@ -78,7 +80,7 @@ class Package {
     //查询最新版本号对应的路径是否存在
     const latestFilePath = this.getSpecificFilePath(newVersion)
     //如果不存在，下载最新版本
-    if (pathExists(latestFilePath)) {
+    if (!pathExists(latestFilePath)) {
       await npminstall({
         root: this.targetPath,
         storeDir: this.storeDir,
@@ -94,15 +96,11 @@ class Package {
 
   }
 
-  getSpecificFilePath(packageVersion) {
-    return path.resolve(this.storeDir, `_${this.cacheFilePathPrefix}@${packageVersion}@${this.packageName}`)
-  }
-
   //获取文件入口的路径
   getRootFilePath() {
-    function _getRootFile(path) {
+    function _getRootFile(targetPath) {
       //1获取package.json所在根目录
-      const dir = pkgDir(path)
+      const dir = pkgDir(targetPath)
       if (dir) {
         //2读取package.json
         const pkgFile = require(path.resolve(dir, 'package.json'))
@@ -114,9 +112,9 @@ class Package {
       }
     }
     if (this.storeDir) {
-      _getRootFile(this.cacheFilePath)
+      return _getRootFile(this.cacheFilePath)
     } else {
-      _getRootFile(this.targetPath)
+      return _getRootFile(this.targetPath)
     }
   }
 }

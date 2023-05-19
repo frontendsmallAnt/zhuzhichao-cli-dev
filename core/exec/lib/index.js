@@ -3,8 +3,7 @@ const Package = require('@zhuzhichao-cli-dev/package')
 const log = require('@zhuzhichao-cli-dev/log')
 const path = require('path')
 const SETTINGS = {
-  // 'init': '@zhuzhichao-cli-dev/init'
-  'init': '@imooc-cli/init'
+  'init': '@zhuzhichao-cli-dev/init'
 }
 const CACHEDIR = 'dependencies'
 async function exec() {
@@ -28,7 +27,6 @@ async function exec() {
       packageVersion
     })
     const res = await pkg.exists()
-    console.log(res, 'res')
     if(res){
       //更新package
       await pkg.update()

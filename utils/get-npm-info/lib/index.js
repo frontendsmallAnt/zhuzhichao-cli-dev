@@ -18,6 +18,7 @@ function getNpmInfo(npmName,registry) {
 
   const registryURl = registry || getDefaultRegistry()
   const apiUrl = urljoin(registryURl,npmName)
+  console.log(apiUrl, 'fffff')
   return axios.get(apiUrl).then(res => {
     if(res.status == 200) {
       return res.data
