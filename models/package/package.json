@@ -28,10 +28,11 @@
   },
   "dependencies": {
     "@zhuzhichao-cli-dev/format-path": "file:../../utils/format-path",
-    "@zhuzhichao-cli-dev/utils": "file:../../utils/utils",
+    "@zhuzhichao-cli-dev/utils": "^1.0.6",
     "fs-extra": "^11.1.1",
-    "get-npm-info": "file:../../utils/get-npm-info",
+    "get-npm-info": "^1.0.6",
     "npminstall": "^5.8.1",
     "path-exists": "^4.0.0"
-  }
+  },
+  "gitHead": "59c5fbc919747acda3172741d9c56359b4e6c92c"
 }

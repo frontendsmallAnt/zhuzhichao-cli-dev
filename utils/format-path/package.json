@@ -1,5 +1,5 @@
 {
-  "name": "format-path",
+  "name": "@zhuzhichao-cli-dev/format-path",
   "version": "1.0.6",
   "description": "> TODO: description",
   "author": "zhuzhichao <1041832785@qq.com>",
@@ -22,5 +22,6 @@
   },
   "bugs": {
     "url": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev/issues"
-  }
+  },
+  "gitHead": "59c5fbc919747acda3172741d9c56359b4e6c92c"
 }

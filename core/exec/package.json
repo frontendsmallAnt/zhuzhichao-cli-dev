@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@zhuzhichao-cli-dev/log": "file:../../utils/log",
-    "@zhuzhichao-cli-dev/package": "file:../../models/package"
-  }
+    "@zhuzhichao-cli-dev/package": "^1.0.6"
+  },
+  "gitHead": "59c5fbc919747acda3172741d9c56359b4e6c92c"
 }

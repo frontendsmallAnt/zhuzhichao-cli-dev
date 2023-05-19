@@ -6,7 +6,7 @@ const pkgDir = require('pkg-dir').sync
 const npminstall = require('npminstall')
 const pathExists = require('path-exists').sync
 const fse = require('fs-extra')
-const { getDefaultRegistry, getNpmLatestVersion } = require('get-npm-info')
+const { getDefaultRegistry, getNpmLatestVersion } =require('@zhuzhichao-cli-dev/get-npm-info')
 const formatPath = require('@zhuzhichao-cli-dev/format-path')
 class Package {
   constructor(options) {

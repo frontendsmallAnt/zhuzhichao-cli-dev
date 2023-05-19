@@ -1,5 +1,5 @@
 {
-  "name": "get-npm-info",
+  "name": "@zhuzhichao-cli-dev/get-npm-info",
   "version": "1.0.6",
   "description": "get npm info",
   "author": "zhuzhichao <1041832785@qq.com>",
@@ -27,5 +27,6 @@
     "axios": "^1.4.0",
     "semver": "^7.5.0",
     "url-join": "^3.0.0"
-  }
+  },
+  "gitHead": "59c5fbc919747acda3172741d9c56359b4e6c92c"
 }

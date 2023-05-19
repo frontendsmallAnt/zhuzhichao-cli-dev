@@ -1,5 +1,5 @@
 {
-  "name": "@imooc-cli/core",
+  "name": "@zhuzhichaoc-cli-dev/core",
   "version": "1.0.6",
   "description": "core",
   "author": "zhuzhichao <1041832785@qq.com>",
@@ -20,9 +20,9 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@zhuzhichao-cli-dev/exec": "file:../exec",
+    "@zhuzhichao-cli-dev/exec": "^1.0.6",
     "@zhuzhichao-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
-    "@zhuzhichao-cli-dev/init": "file:../../commands/init",
+    "@zhuzhichao-cli-dev/init": "^1.0.6",
     "@zhuzhichao-cli-dev/log": "file:../../utils/log",
     "colors": "^1.4.0",
     "commander": "^10.0.1",
@@ -34,7 +34,7 @@
     "semver": "^7.5.0",
     "user-home": "^2.0.0"
   },
-  "gitHead": "0e9d4c49d9c96a5c86e0cb9c87276d32647e22f9",
+  "gitHead": "59c5fbc919747acda3172741d9c56359b4e6c92c",
   "publishConfig": {
     "access": "public"
   }

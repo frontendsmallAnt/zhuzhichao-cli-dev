@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-const getNpmInfo = require('get-npm-info');
+const getNpmInfo =require('@zhuzhichao-cli-dev/get-npm-info');
 
 // TODO: DEMONSTRATE API
 ```

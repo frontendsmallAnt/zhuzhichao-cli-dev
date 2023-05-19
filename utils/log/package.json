@@ -1,5 +1,5 @@
 {
-  "name": "log",
+  "name": "@zhuzhichao-cli-dev/log",
   "version": "1.0.6",
   "description": "日志类",
   "author": "zhuzhichao <1041832785@qq.com>",
@@ -25,5 +25,6 @@
   },
   "dependencies": {
     "npmlog": "^7.0.1"
-  }
+  },
+  "gitHead": "59c5fbc919747acda3172741d9c56359b4e6c92c"
 }
