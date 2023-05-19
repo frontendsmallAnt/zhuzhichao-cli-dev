@@ -1,6 +1,6 @@
 {
   "name": "@zhuzhichaoc-cli-dev/core",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "core",
   "author": "zhuzhichao <1041832785@qq.com>",
   "homepage": "",
@@ -20,9 +20,9 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@zhuzhichao-cli-dev/exec": "^1.0.6",
+    "@zhuzhichao-cli-dev/exec": "^1.0.7",
     "@zhuzhichao-cli-dev/get-npm-info": "file:../../utils/get-npm-info",
-    "@zhuzhichao-cli-dev/init": "^1.0.6",
+    "@zhuzhichao-cli-dev/init": "^1.0.7",
     "@zhuzhichao-cli-dev/log": "file:../../utils/log",
     "colors": "^1.4.0",
     "commander": "^10.0.1",
