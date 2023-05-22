@@ -1,6 +1,6 @@
 {
   "name": "@zhuzhichao-cli-dev/init",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "> TODO: description",
   "author": "zhuzhichao <1041832785@qq.com>",
   "homepage": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev#readme",
@@ -27,7 +27,7 @@
     "url": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev/issues"
   },
   "dependencies": {
-    "@zhuzhichao-cli-dev/command": "^1.0.9"
+    "@zhuzhichao-cli-dev/command": "^1.0.10"
   },
   "gitHead": "560e76da14c86d47eaeff023d15ede3a36bb71f3"
 }
