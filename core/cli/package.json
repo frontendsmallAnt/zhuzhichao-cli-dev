@@ -1,5 +1,5 @@
 {
-  "name": "@zhuzhichaoc-cli-dev/core",
+  "name": "@zhuzhichao-cli-dev/core",
   "version": "1.0.9",
   "description": "core",
   "author": "zhuzhichao <1041832785@qq.com>",
@@ -34,7 +34,7 @@
     "semver": "^7.5.0",
     "user-home": "^2.0.0"
   },
-  "gitHead": "f5f22cb7d40905872ef6c58d2c1384f6e09498fd",
+  "gitHead": "560e76da14c86d47eaeff023d15ede3a36bb71f3",
   "publishConfig": {
     "access": "public"
   }
