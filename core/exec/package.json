@@ -27,8 +27,8 @@
     "url": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev/issues"
   },
   "dependencies": {
-    "@zhuzhichao-cli-dev/log": "file:../../utils/log",
+    "@zhuzhichao-cli-dev/log": "^1.0.7",
     "@zhuzhichao-cli-dev/package": "^1.0.7"
   },
-  "gitHead": "59c5fbc919747acda3172741d9c56359b4e6c92c"
+  "gitHead": "c0c33a4622780bd0abdc550c713e1729fa67b724"
 }

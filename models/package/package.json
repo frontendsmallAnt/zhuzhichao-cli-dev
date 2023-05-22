@@ -27,12 +27,12 @@
     "url": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev/issues"
   },
   "dependencies": {
-    "@zhuzhichao-cli-dev/format-path": "file:../../utils/format-path",
+    "@zhuzhichao-cli-dev/format-path": "^1.0.7",
     "@zhuzhichao-cli-dev/utils": "^1.0.7",
     "fs-extra": "^11.1.1",
     "get-npm-info": "^1.0.6",
     "npminstall": "^5.8.1",
     "path-exists": "^4.0.0"
   },
-  "gitHead": "59c5fbc919747acda3172741d9c56359b4e6c92c"
+  "gitHead": "c0c33a4622780bd0abdc550c713e1729fa67b724"
 }
