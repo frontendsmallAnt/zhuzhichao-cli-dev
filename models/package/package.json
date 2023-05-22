@@ -1,6 +1,6 @@
 {
   "name": "@zhuzhichao-cli-dev/package",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "> TODO: description",
   "author": "zhuzhichao <1041832785@qq.com>",
   "homepage": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev#readme",
@@ -27,8 +27,8 @@
     "url": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev/issues"
   },
   "dependencies": {
-    "@zhuzhichao-cli-dev/format-path": "^1.0.7",
-    "@zhuzhichao-cli-dev/utils": "^1.0.7",
+    "@zhuzhichao-cli-dev/format-path": "^1.0.8",
+    "@zhuzhichao-cli-dev/utils": "^1.0.8",
     "fs-extra": "^11.1.1",
     "get-npm-info": "^1.0.6",
     "npminstall": "^5.8.1",

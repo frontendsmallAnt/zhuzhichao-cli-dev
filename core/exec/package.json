@@ -1,6 +1,6 @@
 {
   "name": "@zhuzhichao-cli-dev/exec",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "> TODO: description",
   "author": "zhuzhichao <1041832785@qq.com>",
   "homepage": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev#readme",
@@ -27,8 +27,8 @@
     "url": "https://github.com/frontendsmallAnt/zhuzhichao-cli-dev/issues"
   },
   "dependencies": {
-    "@zhuzhichao-cli-dev/log": "^1.0.7",
-    "@zhuzhichao-cli-dev/package": "^1.0.7"
+    "@zhuzhichao-cli-dev/log": "^1.0.8",
+    "@zhuzhichao-cli-dev/package": "^1.0.8"
   },
   "gitHead": "c0c33a4622780bd0abdc550c713e1729fa67b724"
 }
